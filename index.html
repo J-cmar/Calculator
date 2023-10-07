@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--
+            Notes:
+            window is a text field, input text
+            document.getElement()
+            on click event, add it to a text field
+            when you click on the button, trigger the event where you append the innerhtml  into the input field
+            when you clear, just clear out the text field
+            innerField.HTML = ""
+
+            to get the strings, we need to parse strings into integers
+            EVAL IS NOT ALLOWED
+
+            uongs strat/advice:
+                split the string, using a split method to get all the numbers, all mathematical operators
+                store them into a stack data structure
+                equation = "5-3x2+8"
+                equation.split("+") = ['5-3x2' '8']
+
+                use a switch statement for the operation itself
+
+                to grab the operation, use indexOf, or split
+            
+            
+            !-->
+
+        <div class="calcBox">
+            <input type="text" class="calcDisplay" readonly disabled>
+            <button >7</button>
+            <button >8</button>
+            <button >9</button>
+
+            <button class="operand">+</button>
+
+            <button >4</button>
+            <button >5</button>
+            <button >6</button>
+
+            <button class="operand">-</button>
+
+            <button >1</button>
+            <button >2</button>
+            <button >3</button>
+
+            <button class="operand">X</button>
+
+            <button class="operand">C</button>
+            <button >0</button>
+            <button class="operand">=</button>
+            <button class="operand">/</button>      
+        </div>
+            
+
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow-y: hidden;
+
+}
+button:hover{
+    cursor:pointer;
+}
+button:active {
+    transform: scale(0.95);
+}
+button{
+    font-size: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+button:not(.operand){
+    background-color: cornsilk;
+    color: black;
+}
+
+
+.calcBox{
+    background-color: darkslategray;
+    border-radius: 30px;
+    padding:   100px 50px 50px 50px;
+    gap: 10px;
+    display: grid;
+    width: 500px;
+    height: 700px;
+    grid-template-columns: repeat(4, 1fr);  /* Simplified version to repeat 4 columns of equal width */
+    grid-template-rows: auto repeat(4, 1fr); 
+
+}
+
+input{
+    
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    grid-column: 1 / span 4;  
+    width: auto; 
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eee;  
+    text-align: right;  
+    margin-bottom: 20px; 
+}
