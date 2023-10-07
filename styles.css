@@ -35,14 +35,14 @@ button:not(.operand){
     display: grid;
     width: 500px;
     height: 700px;
-    grid-template-columns: repeat(4, 1fr);  /* Simplified version to repeat 4 columns of equal width */
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto repeat(4, 1fr); 
 
 }
 
 input{
     
-    font-size: 40px;
+    font-size: 70px;
     padding: 10px;
     border-radius: 20px;
     grid-column: 1 / span 4;  
